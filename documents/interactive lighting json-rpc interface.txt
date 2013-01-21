@@ -1,0 +1,67 @@
+JSON-RPC is a remote procedure call protocol encoded in JSON. It is a very simple protocol, defining only a handful of data types and commands. JSON-RPC allows for notifications (info sent to the server that does not require a response) and for multiple calls to be sent to the server which may be answered out of order.
+
+JSON-RPC works by sending a request to a server implementing this protocol. The client in that case is typically software wanting to call a single method of a remote system. Multiple input parameters can be passed to the remote method as an array or object, whereas the method itself can return multiple output data as well. (This depends on the implemented version.)
+A remote method is invoked by sending a request to a remote service using HTTP or a TCP/IP socket (starting with version 2.0). When Using HTTP, the content-type may be defined as application/json.
+All transfer types are single objects, serialized using JSON. A request is a call to a specific method provided by a remote system. It must contain three certain properties:
+method - A String with the name of the method to be invoked.
+params - An Array of objects to be passed as parameters to the defined method.
+id - A value of any type, which is used to match the response with the request that it is replying to.
+The receiver of the request must reply with a valid response to all received requests. A response must contain the properties mentioned below.
+result - The data returned by the invoked method. If an error occurred while invoking the method, this value must be null.
+error - A specified Error code if there was an error invoking the method, otherwise null.
+id - The id of the request it is responding to.
+Since there are situations where no response is needed or even desired, notifications were introduced. A notification is similar to a request except for the id, which is not needed because no response will be returned. In this case the id property should be omitted (Version 2.0) or be null (Version 1.0).
+
+Procedure Call with positional parameters:
+--> {"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}
+<-- {"jsonrpc": "2.0", "result": 19, "id": 1}
+--> {"jsonrpc": "2.0", "method": "subtract", "params": [23, 42], "id": 2}
+<-- {"jsonrpc": "2.0", "result": -19, "id": 2}
+Procedure Call with named parameters:
+--> {"jsonrpc": "2.0", "method": "subtract", "params": {"subtrahend": 23, "minuend": 42}, "id": 3}
+<-- {"jsonrpc": "2.0", "result": 19, "id": 3}
+--> {"jsonrpc": "2.0", "method": "subtract", "params": {"minuend": 42, "subtrahend": 23}, "id": 4}
+<-- {"jsonrpc": "2.0", "result": 19, "id": 4}
+Notification:
+--> {"jsonrpc": "2.0", "method": "update", "params": [1,2,3,4,5]}
+--> {"jsonrpc": "2.0", "method": "foobar"}
+Procedure Call of non-existent procedure:
+--> {"jsonrpc": "2.0", "method": "foobar", "id": 10}
+<-- {"jsonrpc": "2.0", "error": {"code": -32601, "message": "Procedure not found."}, "id": 10}
+Procedure Call with invalid JSON:
+--> {"jsonrpc": "2.0", "method": "foobar", "params": "bar", "baz"]
+<-- {"jsonrpc": "2.0", "error": {"code": -32700, "message": "Parse error"}, "id": null}
+Procedure Call with invalid JSON-RPC:
+--> [1,2,3]
+<-- {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid JSON-RPC."}, "id": null}
+--> {"jsonrpc": "2.0", "method": 1, "params": "bar"}
+<-- {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid JSON-RPC."}, "id": null}
+
+Objective-C implementation: Demiurgic
+
+
+
+Json Specification for Interactive Lighting Interface:
+
+Valid methods:
+
+//play the song identified by songId
+void playMusic (int songId)
+
+//run the light sequence identified by lightId
+void runLights (int lightId)
+
+//play the song identified by songId and run the light sequence identified by lightId
+void playMusicWithLights (int songId, int lightId)
+
+
+//request a list of valid songs and songId's
+char* getMusicList ()
+
+
+//request a list of valid light sequences and lightId's
+char* getLightList ()
+
+//request a list of valid song/light combinations 
+char* getMusicLightList ()
+
