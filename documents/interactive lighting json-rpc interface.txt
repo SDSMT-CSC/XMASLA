@@ -46,22 +46,29 @@ Json Specification for Interactive Lighting Interface:
 Valid methods:
 
 //play the song identified by songId
+//json example: {"jsonrpc": "2.0", "method": "playMusic", "params": [3]}
 void playMusic (int songId)
 
 //run the light sequence identified by lightId
+//json example: {"jsonrpc": "2.0", "method": "runLights", "params": [2]}
 void runLights (int lightId)
 
 //play the song identified by songId and run the light sequence identified by lightId
+//json example: {"jsonrpc": "2.0", "method": "playMusicWithLights", "params": [3,2]}
 void playMusicWithLights (int songId, int lightId)
 
 
 //request a list of valid songs and songId's
+//json example: {"jsonrpc": "2.0", "method": "getMusicList", "params": [], "id": 1}
 char* getMusicList ()
 
 
 //request a list of valid light sequences and lightId's
+//json example: {"jsonrpc": "2.0", "method": "getLightList", "params": [], "id": 2}
 char* getLightList ()
 
 //request a list of valid song/light combinations 
+//json example: {"jsonrpc": "2.0", "method": "getMusicLightList", "params": [], "id": 3}
 char* getMusicLightList ()
 
+//set the dimming value of a single light channel
