@@ -1,7 +1,8 @@
 (ns renard-clojure.web
 	(:use compojure.core)
 	(:use ring.middleware.json-params)
-	(:use renard-clojure.osc-server))
+	(:use renard-clojure.osc-server)
+	(:use pl.danieljanus.jsonrpc))
 
 (require '[clojure.data.json :as json])
 (use 'overtone.osc)
@@ -34,6 +35,28 @@
 ;                                   (println (vals renard-channel-map)))))))
 
 
+(defn-json-rpc getMusicList []
+	())
+
+(defn-json-rpc getLightList []
+	())
+
+
+(defn-json-rpc getMusicLightList []
+	())
+
+(defn-json-rpc playMusic [song-id]
+	())
+
+(defn-json-rpc runLights [light-id]
+	())
+
+(defn-json-rpc playMusicWithLights [song-id, light-id]
+	())
+
+(defn-json-rpc changeLightChannels [light-channel-vals]
+	())
+
 (def server (make-osc-server "renard" 44100))
 
 (add-fader-handles server)
@@ -46,7 +69,10 @@
 
 (defroutes handler
 	(GET "/" []
-		(json-response channel-vals)))
+		(json-response channel-vals))
+
+	(PUT "/json-rpc" [req]
+		(process-json-rpc req)))
 
 (def app
 	(-> handler

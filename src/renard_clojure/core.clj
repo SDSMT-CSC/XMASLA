@@ -46,10 +46,10 @@
     (write port (byte-array (count d) (map #(.byteValue %) d)))))
 
 
-(def port (renard-open-port "COM28"))
+;(def port (renard-open-port "COM28"))
 
 
-(defn run-lights []
+(defn run-lights [port]
   (while true
   (do
     (def b (client/get "http://107.22.230.121:50000" {:connection-manager cm :as :json}))
