@@ -25,6 +25,7 @@ enum RHErrorCodes {
 @property (nonatomic, retain)   NSString* deviceSerial;
 @property (nonatomic)           enum RHDeviceType deviceType;
 @property (nonatomic)           NSUInteger errorCode;
+@property (nonatomic, retain)  NSString* DDNSSERVERADDRESS;
 
 
 

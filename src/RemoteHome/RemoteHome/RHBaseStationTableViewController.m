@@ -190,6 +190,7 @@
                 [mod setDeviceSerial:(NSString*)[currDict objectForKey:@"DeviceSerial"]];
                 [mod setDeviceType:[(NSNumber*)[currDict objectForKey:@"DeviceType"] integerValue]];
                 [mod setErrorCode:[(NSNumber*)[currDict objectForKey:@"ErrorCode"] integerValue]];
+                [mod setDDNSSERVERADDRESS:@"192.168.1.1"];
                 
                 [parsedDevices addObject:mod];
             }
