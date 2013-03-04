@@ -7,3 +7,7 @@
 (defn -main [& args]
 	(run-jetty #'web/app {:port 50000}))
 
+(defn start-app []
+	(do
+		(web/add-fader-handles web/server)
+		(run-jetty #'web/app {:port 50000})))
