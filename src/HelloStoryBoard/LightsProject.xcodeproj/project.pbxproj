@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F504DC66163730E900839BF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F504DC65163730E900839BF0 /* UIKit.framework */; };
+		F504DC68163730E900839BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F504DC67163730E900839BF0 /* Foundation.framework */; };
+		F504DC6A163730E900839BF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F504DC69163730E900839BF0 /* CoreGraphics.framework */; };
+		F504DC70163730E900839BF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F504DC6E163730E900839BF0 /* InfoPlist.strings */; };
+		F504DC72163730E900839BF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F504DC71163730E900839BF0 /* main.m */; };
+		F504DC76163730E900839BF0 /* RHMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F504DC75163730E900839BF0 /* RHMAppDelegate.m */; };
+		F504DC78163730E900839BF0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F504DC77163730E900839BF0 /* Default.png */; };
+		F504DC7A163730E900839BF0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F504DC79163730E900839BF0 /* Default@2x.png */; };
+		F504DC7C163730E900839BF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F504DC7B163730E900839BF0 /* Default-568h@2x.png */; };
+		F504DC7F163730E900839BF0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F504DC7D163730E900839BF0 /* MainStoryboard.storyboard */; };
+		F504DC82163730E900839BF0 /* RHMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F504DC81163730E900839BF0 /* RHMViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F504DC61163730E900839BF0 /* LightsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F504DC65163730E900839BF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F504DC67163730E900839BF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F504DC69163730E900839BF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F504DC6D163730E900839BF0 /* LightsProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightsProject-Info.plist"; sourceTree = "<group>"; };
+		F504DC6F163730E900839BF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F504DC71163730E900839BF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F504DC73163730E900839BF0 /* LightsProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LightsProject-Prefix.pch"; sourceTree = "<group>"; };
+		F504DC74163730E900839BF0 /* RHMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHMAppDelegate.h; sourceTree = "<group>"; };
+		F504DC75163730E900839BF0 /* RHMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHMAppDelegate.m; sourceTree = "<group>"; };
+		F504DC77163730E900839BF0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F504DC79163730E900839BF0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F504DC7B163730E900839BF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F504DC7E163730E900839BF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F504DC80163730E900839BF0 /* RHMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHMViewController.h; sourceTree = "<group>"; };
+		F504DC81163730E900839BF0 /* RHMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHMViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F504DC5E163730E900839BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F504DC66163730E900839BF0 /* UIKit.framework in Frameworks */,
+				F504DC68163730E900839BF0 /* Foundation.framework in Frameworks */,
+				F504DC6A163730E900839BF0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F504DC56163730E900839BF0 = {
+			isa = PBXGroup;
+			children = (
+				F504DC6B163730E900839BF0 /* LightsProject */,
+				F504DC64163730E900839BF0 /* Frameworks */,
+				F504DC62163730E900839BF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F504DC62163730E900839BF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F504DC61163730E900839BF0 /* LightsProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F504DC64163730E900839BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F504DC65163730E900839BF0 /* UIKit.framework */,
+				F504DC67163730E900839BF0 /* Foundation.framework */,
+				F504DC69163730E900839BF0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F504DC6B163730E900839BF0 /* LightsProject */ = {
+			isa = PBXGroup;
+			children = (
+				F504DC74163730E900839BF0 /* RHMAppDelegate.h */,
+				F504DC75163730E900839BF0 /* RHMAppDelegate.m */,
+				F504DC7D163730E900839BF0 /* MainStoryboard.storyboard */,
+				F504DC80163730E900839BF0 /* RHMViewController.h */,
+				F504DC81163730E900839BF0 /* RHMViewController.m */,
+				F504DC6C163730E900839BF0 /* Supporting Files */,
+			);
+			name = LightsProject;
+			path = HelloStoryBoard;
+			sourceTree = "<group>";
+		};
+		F504DC6C163730E900839BF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F504DC6D163730E900839BF0 /* LightsProject-Info.plist */,
+				F504DC6E163730E900839BF0 /* InfoPlist.strings */,
+				F504DC71163730E900839BF0 /* main.m */,
+				F504DC73163730E900839BF0 /* LightsProject-Prefix.pch */,
+				F504DC77163730E900839BF0 /* Default.png */,
+				F504DC79163730E900839BF0 /* Default@2x.png */,
+				F504DC7B163730E900839BF0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F504DC60163730E900839BF0 /* LightsProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F504DC85163730E900839BF0 /* Build configuration list for PBXNativeTarget "LightsProject" */;
+			buildPhases = (
+				F504DC5D163730E900839BF0 /* Sources */,
+				F504DC5E163730E900839BF0 /* Frameworks */,
+				F504DC5F163730E900839BF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightsProject;
+			productName = HelloStoryBoard;
+			productReference = F504DC61163730E900839BF0 /* LightsProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F504DC58163730E900839BF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RHM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jordan Doell";
+			};
+			buildConfigurationList = F504DC5B163730E900839BF0 /* Build configuration list for PBXProject "LightsProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F504DC56163730E900839BF0;
+			productRefGroup = F504DC62163730E900839BF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F504DC60163730E900839BF0 /* LightsProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F504DC5F163730E900839BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F504DC70163730E900839BF0 /* InfoPlist.strings in Resources */,
+				F504DC78163730E900839BF0 /* Default.png in Resources */,
+				F504DC7A163730E900839BF0 /* Default@2x.png in Resources */,
+				F504DC7C163730E900839BF0 /* Default-568h@2x.png in Resources */,
+				F504DC7F163730E900839BF0 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F504DC5D163730E900839BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F504DC72163730E900839BF0 /* main.m in Sources */,
+				F504DC76163730E900839BF0 /* RHMAppDelegate.m in Sources */,
+				F504DC82163730E900839BF0 /* RHMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F504DC6E163730E900839BF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F504DC6F163730E900839BF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F504DC7D163730E900839BF0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F504DC7E163730E900839BF0 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F504DC83163730E900839BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F504DC84163730E900839BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F504DC86163730E900839BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloStoryBoard/LightsProject-Prefix.pch";
+				INFOPLIST_FILE = "HelloStoryBoard/LightsProject-Info.plist";
+				PRODUCT_NAME = LightsProject;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F504DC87163730E900839BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloStoryBoard/LightsProject-Prefix.pch";
+				INFOPLIST_FILE = "HelloStoryBoard/LightsProject-Info.plist";
+				PRODUCT_NAME = LightsProject;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F504DC5B163730E900839BF0 /* Build configuration list for PBXProject "LightsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F504DC83163730E900839BF0 /* Debug */,
+				F504DC84163730E900839BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F504DC85163730E900839BF0 /* Build configuration list for PBXNativeTarget "LightsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F504DC86163730E900839BF0 /* Debug */,
+				F504DC87163730E900839BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F504DC58163730E900839BF0 /* Project object */;
+}

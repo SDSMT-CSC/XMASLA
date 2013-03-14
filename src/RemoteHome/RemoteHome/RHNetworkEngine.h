@@ -12,6 +12,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#define DDNSSERVERADDRESS @"10.0.1.10"
 
 enum RHNetworkMode {
     RHNetworkModeManaged = 0,

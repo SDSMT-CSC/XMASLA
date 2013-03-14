@@ -1,6 +1,6 @@
 #import "RHNetworkEngine.h"
 
-#define TIMERTIME 1.0              // Timeout time
+#define TIMERTIME 10.0              // Timeout time
 
 @implementation RHNetworkEngine
 
@@ -210,7 +210,7 @@ return self;
     CFWriteStreamRef writeStream;
     
     // Create a connection
-    CFStreamCreatePairWithSocketToHost(NULL, (__bridge CFStringRef)address, 8128, &readStream, &writeStream);
+    CFStreamCreatePairWithSocketToHost(NULL, (__bridge CFStringRef)address, 80, &readStream, &writeStream);
     
     inputStream = (__bridge NSInputStream*)readStream;
     outputStream = (__bridge NSOutputStream*)writeStream;

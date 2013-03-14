@@ -9,8 +9,5 @@
 #import "RHDeviceModel.h"
 
 @implementation RHDeviceModel
-@synthesize DDNSSERVERADDRESS;
-
-
 
 @end

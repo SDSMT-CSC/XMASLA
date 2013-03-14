@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04ECDD2216D3F1EC0008AF79 /* XMASlightsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDD2116D3F1EC0008AF79 /* XMASlightsStoryboard.storyboard */; };
+		048A57B316E4F87300F70AA1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048A57B216E4F87300F70AA1 /* Storyboard.storyboard */; };
 		7208D7B21667F7E10092C686 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7208D7B11667F7E10092C686 /* CoreData.framework */; };
 		726E7F141662B44000B7BC0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726E7F131662B44000B7BC0F /* UIKit.framework */; };
 		726E7F161662B44000B7BC0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726E7F151662B44000B7BC0F /* Foundation.framework */; };
@@ -37,7 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04ECDD2116D3F1EC0008AF79 /* XMASlightsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XMASlightsStoryboard.storyboard; sourceTree = "<group>"; };
+		048A57B216E4F87300F70AA1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7208D7B11667F7E10092C686 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		726E7F0F1662B44000B7BC0F /* RemoteHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726E7F131662B44000B7BC0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -113,7 +113,7 @@
 		726E7F041662B44000B7BC0F = {
 			isa = PBXGroup;
 			children = (
-				04ECDD2116D3F1EC0008AF79 /* XMASlightsStoryboard.storyboard */,
+				048A57B216E4F87300F70AA1 /* Storyboard.storyboard */,
 				726E7F191662B44000B7BC0F /* RemoteHome */,
 				726E7F121662B44000B7BC0F /* Frameworks */,
 				726E7F101662B44000B7BC0F /* Products */,
@@ -267,7 +267,7 @@
 				726E7F4A1662BB7700B7BC0F /* RHFirstTimeInstructionViewController.xib in Resources */,
 				72AB714B169D041100A478E4 /* RHUpdateBaseStationViewController.xib in Resources */,
 				729246A616A1E90A00229045 /* RHErrorViewController.xib in Resources */,
-				04ECDD2216D3F1EC0008AF79 /* XMASlightsStoryboard.storyboard in Resources */,
+				048A57B316E4F87300F70AA1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
