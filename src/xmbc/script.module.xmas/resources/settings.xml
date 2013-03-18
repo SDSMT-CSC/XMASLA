@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="31000">
+        <setting label="31001" type="text" id="command server" default="http://107.22.230.121"/>
+        <setting label="31002" type="text" id="port" default="5000"/>
+        <setting type="sep"/>
+        <setting label="31003" type="text" id="channel server" default="http://107.22.230.121"/>
+        <setting label="31004" type="text" id="port" default="50000"/>
+    </category>
+</settings>
