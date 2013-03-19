@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RHNetworkEngine.h"
+//#import "RHNetworkEngine.h"
 
 @interface StoryboardViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UISlider *channel1;
-@property (retain, nonatomic, retain) IBOutlet UISlider *channel2;
+@property (retain, nonatomic) IBOutlet UISlider *channel2;
 @property (retain, nonatomic) IBOutlet UISlider *channel3;
 @property (retain, nonatomic) IBOutlet UISlider *channel4;
 @property (retain, nonatomic) IBOutlet UISlider *channel5;
@@ -28,9 +28,12 @@
 @property (retain, nonatomic) IBOutlet UISlider *channel15;
 @property (retain, nonatomic) IBOutlet UISlider *channel16;
 
-//@property (weak, nonatomic) IBOutlet UIButton *CaroloftheBells;
-//@property (weak, nonatomic) IBOutlet UIButton *WeWishYouaMerryChristmas;
-- (IBAction)songPlayed:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *mylabel;
+@property (weak, nonatomic) IBOutlet UILabel *songPlaying;
+
+@property (retain, nonatomic ) NSURL *url;
+
+- (IBAction)SongPlayed:(id)sender;
 
 - (IBAction)valueChanged:(id)sender;
 
