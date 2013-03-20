@@ -31,8 +31,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *mylabel;
 @property (weak, nonatomic) IBOutlet UILabel *songPlaying;
 
-@property (retain, nonatomic ) NSURL *url;
-
 - (IBAction)SongPlayed:(id)sender;
 
 - (IBAction)valueChanged:(id)sender;
