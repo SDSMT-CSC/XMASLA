@@ -69,7 +69,7 @@
     //build an info object and convert to json
     NSDictionary *newDatasetInfo = [NSDictionary dictionaryWithObjectsAndKeys:songName, @"play", nil];
     
-    NSURL *myURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://107.22.230.121:5000/channels"]];
+    NSURL *myURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://107.22.230.121:5000/player"]];
     NSError *error;
     //convert object to data
     NSData* jsonData = [NSJSONSerialization dataWithJSONObject:newDatasetInfo options:kNilOptions error:&error];
@@ -127,7 +127,7 @@
     //build an info object and convert to json
     NSDictionary *newDatasetInfo = [NSDictionary dictionaryWithObjectsAndKeys:songName, @"pause", nil];
     
-    NSURL *myURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://107.22.230.121:5000/channels"]];
+    NSURL *myURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://107.22.230.121:5000/player"]];
     NSError *error;
     //convert object to data
     NSData* jsonData = [NSJSONSerialization dataWithJSONObject:newDatasetInfo options:kNilOptions error:&error];

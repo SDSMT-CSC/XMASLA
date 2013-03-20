@@ -327,25 +327,36 @@
                                     <segue destination="UpC-5S-q4t" kind="modal" modalTransitionStyle="crossDissolve" id="REZ-qI-8o8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Christmas Lights Animation - By Interactive Lighting" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="HKW-xs-UBv">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Christmas Lights Animation" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="HKW-xs-UBv">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="fMs-xE-68H"/>
+                                    <constraint firstAttribute="height" constant="35" id="WIR-Ka-gqd"/>
                                     <constraint firstAttribute="width" constant="285" id="r80-do-4qr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="- By Interactive Lighting" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="2EB-Wi-ol0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ESU-oW-gMo"/>
+                                    <constraint firstAttribute="width" constant="285" id="P6W-YJ-RuO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HKW-xs-UBv" firstAttribute="centerX" secondItem="hF4-zv-rOL" secondAttribute="centerX" type="default" id="2SM-gi-zez"/>
                             <constraint firstItem="G8l-zG-mwK" firstAttribute="leading" secondItem="hF4-zv-rOL" secondAttribute="leading" type="default" id="32V-xT-yai"/>
                             <constraint firstItem="HKW-xs-UBv" firstAttribute="centerX" secondItem="5U7-WW-wKg" secondAttribute="centerX" type="default" id="57S-8m-5wZ"/>
+                            <constraint firstAttribute="bottom" secondItem="HKW-xs-UBv" secondAttribute="bottom" constant="160" id="8ll-jO-il6"/>
                             <constraint firstAttribute="bottom" secondItem="5U7-WW-wKg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="APP-Ur-5nW"/>
                             <constraint firstItem="G8l-zG-mwK" firstAttribute="bottom" secondItem="hF4-zv-rOL" secondAttribute="bottom" type="default" id="BGP-9f-Qyd"/>
-                            <constraint firstAttribute="bottom" secondItem="HKW-xs-UBv" secondAttribute="bottom" constant="99" id="DFN-DR-Rgz"/>
-                            <constraint firstItem="G8l-zG-mwK" firstAttribute="centerX" secondItem="HKW-xs-UBv" secondAttribute="centerX" type="default" id="jU9-4n-H2c"/>
+                            <constraint firstItem="5U7-WW-wKg" firstAttribute="centerX" secondItem="G8l-zG-mwK" secondAttribute="centerX" type="default" id="IYx-St-xkX"/>
+                            <constraint firstItem="5U7-WW-wKg" firstAttribute="centerX" secondItem="hF4-zv-rOL" secondAttribute="centerX" type="default" id="bZX-gL-uSN"/>
+                            <constraint firstAttribute="bottom" secondItem="2EB-Wi-ol0" secondAttribute="bottom" constant="131" id="kiZ-pL-lLM"/>
+                            <constraint firstItem="2EB-Wi-ol0" firstAttribute="leading" secondItem="hF4-zv-rOL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rSU-6J-h7x"/>
                             <constraint firstItem="G8l-zG-mwK" firstAttribute="top" secondItem="hF4-zv-rOL" secondAttribute="top" type="default" id="xW9-dP-2BN"/>
                         </constraints>
                     </view>
