@@ -35,4 +35,6 @@
 
 - (IBAction)valueChanged:(id)sender;
 
+- (IBAction)SongPaused:(id)sender;
+
 @end

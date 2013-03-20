@@ -313,7 +313,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-zG-mwK"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-zG-mwK"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U7-WW-wKg">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Continue">
@@ -333,7 +333,7 @@
                                     <constraint firstAttribute="width" constant="285" id="r80-do-4qr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.72749856950000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -498,6 +498,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="SongPaused:" destination="7Us-oF-7ST" eventType="touchUpInside" id="cQ7-Mb-CjR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -530,7 +533,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg" width="640" height="1136"/>
+        <image name="grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg" width="640" height="1136"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
@@ -539,6 +542,7 @@
         <class className="StoryboardViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StoryboardViewController.h"/>
             <relationships>
+                <relationship kind="action" name="SongPaused:"/>
                 <relationship kind="action" name="SongPlayed:"/>
                 <relationship kind="action" name="valueChanged:"/>
                 <relationship kind="outlet" name="channel1" candidateClass="UISlider"/>

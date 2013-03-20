@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044B7FB616FA67BF00D9D913 /* grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 044B7FB516FA67BF00D9D913 /* grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg */; };
 		04674D3316F907A30045586C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04674D3016F907A30045586C /* Storyboard.storyboard */; };
 		04674D3416F907A30045586C /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04674D3216F907A30045586C /* StoryboardViewController.m */; };
-		04674D3716F90C010045586C /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04674D3616F90C010045586C /* SongsViewController.m */; };
 		04F2F80716F97A6D00C4E2DE /* Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F2F80616F97A6D00C4E2DE /* Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg */; };
 		F504DC66163730E900839BF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F504DC65163730E900839BF0 /* UIKit.framework */; };
 		F504DC68163730E900839BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F504DC67163730E900839BF0 /* Foundation.framework */; };
@@ -23,11 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044B7FB516FA67BF00D9D913 /* grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
 		04674D3016F907A30045586C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		04674D3116F907A30045586C /* StoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
 		04674D3216F907A30045586C /* StoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
-		04674D3516F90C010045586C /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
-		04674D3616F90C010045586C /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
 		04F2F80616F97A6D00C4E2DE /* Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
 		F504DC61163730E900839BF0 /* LightsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F504DC65163730E900839BF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -91,8 +90,6 @@
 				F504DC74163730E900839BF0 /* RHMAppDelegate.h */,
 				F504DC75163730E900839BF0 /* RHMAppDelegate.m */,
 				04674D3016F907A30045586C /* Storyboard.storyboard */,
-				04674D3516F90C010045586C /* SongsViewController.h */,
-				04674D3616F90C010045586C /* SongsViewController.m */,
 				04674D3116F907A30045586C /* StoryboardViewController.h */,
 				04674D3216F907A30045586C /* StoryboardViewController.m */,
 				F504DC6C163730E900839BF0 /* Supporting Files */,
@@ -111,6 +108,7 @@
 				F504DC77163730E900839BF0 /* Default.png */,
 				F504DC79163730E900839BF0 /* Default@2x.png */,
 				F504DC7B163730E900839BF0 /* Default-568h@2x.png */,
+				044B7FB516FA67BF00D9D913 /* grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg */,
 				04F2F80616F97A6D00C4E2DE /* Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg */,
 			);
 			name = "Supporting Files";
@@ -174,6 +172,7 @@
 				F504DC7C163730E900839BF0 /* Default-568h@2x.png in Resources */,
 				04674D3316F907A30045586C /* Storyboard.storyboard in Resources */,
 				04F2F80716F97A6D00C4E2DE /* Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg in Resources */,
+				044B7FB616FA67BF00D9D913 /* grey Christmas-lights-iPhone-5-wallpaper-ilikewallpaper_com.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +186,6 @@
 				F504DC72163730E900839BF0 /* main.m in Sources */,
 				F504DC76163730E900839BF0 /* RHMAppDelegate.m in Sources */,
 				04674D3416F907A30045586C /* StoryboardViewController.m in Sources */,
-				04674D3716F90C010045586C /* SongsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

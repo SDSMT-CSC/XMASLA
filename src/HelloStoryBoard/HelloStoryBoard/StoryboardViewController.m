@@ -119,4 +119,30 @@
     [connection start];
     
 }
+
+- (IBAction)SongPaused:(id)sender
+{
+    NSString *songName = self.songPlaying.text; // gets current song thats playing
+    
+    //build an info object and convert to json
+    NSDictionary *newDatasetInfo = [NSDictionary dictionaryWithObjectsAndKeys:songName, @"pause", nil];
+    
+    NSURL *myURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://107.22.230.121:5000/channels"]];
+    NSError *error;
+    //convert object to data
+    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:newDatasetInfo options:kNilOptions error:&error];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:myURL];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPBody:jsonData];
+    
+    // print json:
+    NSLog(@"JSON summary: %@", [[NSString alloc] initWithData:jsonData
+                                                     encoding:NSUTF8StringEncoding]);
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
+}
 @end
