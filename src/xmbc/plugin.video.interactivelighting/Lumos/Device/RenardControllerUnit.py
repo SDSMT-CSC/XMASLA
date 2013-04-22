@@ -159,6 +159,8 @@ class RenardControllerUnit (ControllerUnit):
 				else:
 					self.send_escaped_int(channel.level)
 			self.update_pending = False
+			#send pad byte
+			#self.network.send(bytearray([0x7D]))
 
 	#def iter_channels(self):
 		#return range(len(self.channels))

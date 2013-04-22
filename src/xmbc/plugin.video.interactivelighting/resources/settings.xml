@@ -8,7 +8,8 @@
         <setting label="31004" type="text" id="port" default="50000"/>
         <setting type="sep"/>
         <setting label="31005" type="text" id="sequence location" default="C:\\Users\\Austin\\Dropbox\\Sequences"/>
-        <setting label="31006" type="text" id="controller config" default="C:\\Users\\Austin\\Dropbox\\Sequences\\renardconfig" />
-	<setting label="31007" type="text" id="serial port" default="COM9"/>
+        <setting label="31006" type="text" id="audio location" default="C:\\Users\\Austin\\Dropbox\\audio"/>
+        <setting label="31007" type="text" id="controller config" default="C:\\Users\\Austin\\Dropbox\\Sequences\\renardconfig" />
+	<setting label="31008" type="text" id="serial port" default="COM9"/>
     </category>
 </settings>

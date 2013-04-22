@@ -1,6 +1,5 @@
 import httplib2
 import json
-import serial
 
 pb = 0x7D #pad byte
 sb = 0x7E #sync byte
@@ -42,8 +41,10 @@ def getSequences():
 		seqs = ls['lights']
 	return seqs
 
-
-
+def clearStatus():
+	header = {"Content-Type":"application/json","User-Agent":"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)"}
+	data = '{"stop": " "}'
+	response, send = h.request(playeruri, "POST", headers=header, body=data)
 
 def special_replace(n):
 	if n == 0x7D:
