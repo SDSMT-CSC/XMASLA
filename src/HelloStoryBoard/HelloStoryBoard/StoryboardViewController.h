@@ -1,15 +1,20 @@
-//
-//  StoryboardViewController.h
-//  RemoteHome
-//
-//  Created by Jordan Doell on 3/19/13.
-//  Copyright (c) 2013 James Wiegand. All rights reserved.
-//
+/*=====================================================================
+ Program: Christmas Lights Animation
+ File: StoryboardViewController.h
+ Author: Jordan Doell
+ Date: 4/25/13
+ Description: App for Christmas Lights Animation Project
+ Sends commands to server: play, pause, and changes each
+ channel's brightness
+ ======================================================================*/
+
 
 #import <UIKit/UIKit.h>
 //#import "RHNetworkEngine.h"
 
 @interface StoryboardViewController : UIViewController
+
+// sliders for each channel
 @property (retain, nonatomic) IBOutlet UISlider *channel1;
 @property (retain, nonatomic) IBOutlet UISlider *channel2;
 @property (retain, nonatomic) IBOutlet UISlider *channel3;
@@ -28,6 +33,7 @@
 @property (retain, nonatomic) IBOutlet UISlider *channel15;
 @property (retain, nonatomic) IBOutlet UISlider *channel16;
 
+// labels for songs playing
 @property (weak, nonatomic) IBOutlet UILabel *mylabel;
 @property (weak, nonatomic) IBOutlet UILabel *songPlaying;
 

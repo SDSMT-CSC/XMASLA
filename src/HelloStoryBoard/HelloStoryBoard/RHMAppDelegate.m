@@ -1,10 +1,13 @@
-//
-//  RHMAppDelegate.m
-//  HelloStoryBoard
-//
-//  Created by Jordan Doell on 10/23/12.
-//  Copyright (c) 2012 Jordan Doell. All rights reserved.
-//
+/*=====================================================================
+ Program: Christmas Lights Animation
+ File: RHMAppDelegate.m
+ Author: Jordan Doell
+ Date: 4/25/13
+ Description: App for Christmas Lights Animation Project
+ Sends commands to server: play, pause, and changes each
+ channel's brightness
+ ======================================================================*/
+
 
 #import "RHMAppDelegate.h"
 
